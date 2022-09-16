@@ -1,6 +1,7 @@
 import { View, FlatList, Dimensions } from 'react-native'
 import { useState } from 'react'
 import ItemRenderer from './components/item-renderer'
+import { useFonts } from 'expo-font'
 
 const data = [
   {
@@ -45,6 +46,11 @@ const data = [
 
 export default function App () {
   const [items] = useState(data)
+  const [fontsLoaded] = useFonts({
+    nunitoRegular: require('./assets/fonts/Nunito-Regular.ttf'),
+    nunitoBold: require('./assets/fonts/Nunito-Bold.ttf')
+  })
+  if (!fontsLoaded) return null
   return (
     <View>
       <FlatList
