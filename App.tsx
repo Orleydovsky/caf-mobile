@@ -56,7 +56,7 @@ export default function App () {
       <FlatList
         data={items}
         renderItem={({ item }) => <ItemRenderer item={item}/>}
-        snapToAlignment='center'
+        snapToAlignment='start'
         decelerationRate={'normal'}
         snapToInterval={Dimensions.get('window').height}
       />
