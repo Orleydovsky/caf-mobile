@@ -1,0 +1,47 @@
+{
+  "cafs":[
+    {
+      "id": 1,
+      "content": [
+        {
+          "type": "cover",
+          "title": "¿Quién tiene sed?",
+          "serie": "Pasión por Dios",
+          "topic": 1,
+          "quote": "Juan 7:37-39"
+        },
+        {
+          "type": "section",
+          "title": "Introducción",
+          "content": "#La sed es el mecanismo que regula el contenido de agua en el organismo y uno de los primeros indicios que nos marca la deshidratación. #En medio de una fiesta donde hay comida y bebida en abundancia, Jesús dice: “Si alguno tiene sed, venga a mí y beba”. #Sonaría ilógico que después de 7 días de fiesta, de comer y beber alguien tenga sed. #Pero Jesús no está hablando de la sed física que estimula nuestro cerebro sino de la sed y Pasión por el Espíritu Santo."
+        },
+        {
+          "type": "extra",
+          "content": "¿Qué hacer para beber del Espíritu Santo?"
+        },
+        {
+          "type": "section",
+          "title": "Reconozca su condición",
+          "quote": "Versículo 37: Si alguno tiene sed",
+          "content": "#Muchos asumen que están bien y saciados, sin necesidad de venir a tomar agua. #No todos tienen sed, por eso Jesús busca a alguno, alguien que reconozca la sensación que emite nosu cerebro, sino su espíritu por su condición."
+        },
+        {
+          "type": "section",
+          "title": "Busque la fuente adecuada",
+          "quote": "Versículo 37: Venga a mí y beba",
+          "content": "#Jesús nos muestra que él es la fuente clara para saciar la sed. No nos envía a ningún otro lugar o persona. #Muchos viven con sed todavía porque buscan beber de los lugares o personas equivocadas. Pero Él es la fuente que viene para llenar nuestro ser."
+        },
+        {
+          "type": "section",
+          "title": "Resultados de beber del Espíritu Santo",
+          "quote": "Versículos 38-39",
+          "content": "#Jesús nos muestra que él es la fuente clara para saciar la sed. No nos envía a ningún otro lugar o persona. #Muchos viven con sed todavía porque buscan beber de los lugares o personas equivocadas. Pero Él es la fuente que viene para llenar nuestro ser."
+        },
+        {
+          "type": "conclusion",
+          "content": "Jesús nos muestra que él es la fuente clara para saciar la sed. No nos envía a ningún otro lugar o persona. Muchos viven con sed todavía porque buscan beber de los lugares o personas equivocadas. Pero Él es la fuente que viene para llenar nuestro ser."
+        }
+      ]
+    }
+  ]
+}
