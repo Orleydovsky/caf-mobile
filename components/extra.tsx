@@ -1,8 +1,9 @@
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import * as color from '../constants/colors'
 import { LinearGradient } from 'expo-linear-gradient'
+import { Extra as Props } from '../types'
 
-export default function Extra ({ content }: { content: string }) {
+export default function Extra ({ content }: Props) {
   return (
     <View style={styles.container}>
       <View style={{

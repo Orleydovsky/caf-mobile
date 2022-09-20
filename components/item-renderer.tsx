@@ -4,7 +4,7 @@ import Cover from './cover'
 import Extra from './extra'
 import Section from './section'
 
-const ItemRenderer = ({ item }) => {
+const ItemRenderer = ({ item }: any) => {
   switch (item.type) {
     case 'cover':
       return <Cover title={item.title} serie={item.serie} topic={item.topic} quote={item.quote}/>

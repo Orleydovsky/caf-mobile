@@ -2,8 +2,9 @@ import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import { Form } from './form'
 import * as color from '../constants/colors'
 import { LinearGradient } from 'expo-linear-gradient'
+import { Conclusion as Props } from '../types'
 
-export default function Conclusion ({ content }: { content: string }) {
+export default function Conclusion ({ content }: Props) {
   return (
     <View style={styles.container}>
       <LinearGradient

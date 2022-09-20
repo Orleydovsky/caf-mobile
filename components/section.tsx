@@ -1,12 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import * as color from '../constants/colors'
-
-interface Props {
-  title: string
-  quote?: string
-  content: string
-}
+import { Section as Props } from '../types'
 
 export default function Section ({ title, content }: Props) {
   return (

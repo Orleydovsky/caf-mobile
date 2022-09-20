@@ -1,12 +1,6 @@
 import { Dimensions, Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 import * as color from '../constants/colors'
-
-interface Props {
-  title: string
-  serie: string
-  topic: string
-  quote: string
-}
+import { Cover as Props } from '../types'
 
 export default function Cover ({ title, serie, topic, quote }: Props) {
   return (
