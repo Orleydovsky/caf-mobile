@@ -2,7 +2,6 @@ import { Dimensions, StyleSheet } from 'react-native'
 import Conclusion from './conclusion'
 import Cover from './cover'
 import Extra from './extra'
-import Fallback from './fallback'
 import Section from './section'
 
 const ItemRenderer = ({ item }) => {
@@ -16,7 +15,7 @@ const ItemRenderer = ({ item }) => {
     case 'conclusion':
       return <Conclusion content={item.content}/>
     default:
-      return <Fallback type={item.type}/>
+      return null
   }
 }
 
