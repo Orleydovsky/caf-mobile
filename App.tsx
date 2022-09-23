@@ -1,8 +1,8 @@
-import { View, FlatList, Dimensions } from 'react-native'
-import { useState } from 'react'
-import ItemRenderer from './components/item-renderer'
+import { Route, Routes, Navigate, NativeRouter } from 'react-router-native'
 import { useFonts } from 'expo-font'
-import useCafs from './hooks/use-cafs'
+import { Fragment } from 'react'
+import HomeMobile from './screens/home-mobile'
+import Brochure from './features/brochure/brochure'
 
 export default function App () {
   const { cafs } = useCafs()
@@ -12,14 +12,14 @@ export default function App () {
   })
   if (!fontsLoaded) return null
   return (
-    <View>
-      <FlatList
-        data={items?.content}
-        renderItem={({ item }) => <ItemRenderer item={item}/>}
-        snapToAlignment='start'
-        decelerationRate={'normal'}
-        snapToInterval={Dimensions.get('window').height}
-      />
-    </View>
+    <Fragment>
+      <NativeRouter>
+        <Routes>
+          <Route path='/' element={<HomeMobile/>}/>
+          <Route path='/:id' element={<Brochure/>}/>
+          <Route path='*' element={<Navigate to='/' replace/>}/>
+        </Routes>
+      </NativeRouter>
+    </Fragment>
   )
 }
