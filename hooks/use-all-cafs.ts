@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react'
 import { Caf } from '../types'
 
-const useCafs = () => {
-  const [cafs, setCafs] = useState<Caf[]>()
+const useAllCafs = () => {
+  const [allCaffs, setAllCafs] = useState<Caf[]>()
   const [isLoading, setIsLoading] = useState(false)
 
-  const fetchCafs = async () => {
+  const fetchAllCafs = async () => {
     setIsLoading(true)
     const response = await fetch('http://192.168.80.15:3000/cafs')
     const json = await response.json()
     setIsLoading(false)
-    setCafs(json)
+    setAllCafs(json)
   }
   useEffect(() => {
-    void fetchCafs()
+    void fetchAllCafs()
   }, [])
-  return { cafs, isLoading, refetch: fetchCafs }
+  return { allCaffs, isLoading, refetch: fetchAllCafs }
 }
 
-export default useCafs
+export default useAllCafs
